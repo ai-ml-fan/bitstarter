@@ -3,7 +3,7 @@
     <head>
 		<meta charset="utf-8">
 		<title>  Unico Toys</title>
-		<link rel="shortcut icon" type="image/png" href="http://imgur.com/LZflfJI.png" >
+		<link rel="shortcut icon" type="image/png" class="img-polaroid" href="http://imgur.com/LZflfJI.png" >
 		<meta name="viewport" content="width-device-width,initial-scale=1.0">
 		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -100,7 +100,7 @@
 			}
 		</style>
 	</head>
-	<body>
+	<!-- <body> -->
 		<!-- Mobile friendly navbar adapted from example -->
 		<!-- http://twitter.github.cm.io/bootstrap/examples/starter-template.html -->
 		<body style="background-color:blanchedalmond;">
@@ -135,7 +135,7 @@
 			<!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
 			<div class="row-fluid heading">
 				<div class="span12">
-					<h1><a href="http://"><img src="http://i.imgur.com/LZflfJI.png" onload="this.width/=18;"  alt="Unico Toys Logo" ></a>
+					<h1><a href="http://i.imgur.com/LZflfJI.png"><img class="img-polaroid" src="http://i.imgur.com/LZflfJI.png" onload="this.width/=8;"  alt="Unico Toys Logo" ></a>
 					Unico Toys</h1>
 				</div>
 			</div>
@@ -147,8 +147,8 @@
 				</div>
 			</div>
 			<div class="row-fluid pitch">
-				<div class="span5 offset1 asset">
-					<img class="img-polaroid" src="http://i.istockimg.com/file_thumbview_approve/20031910/2/stock-photo-20031910-lego-city-passenger-train-7938.jpg" >
+				<div class="span5 offset1 video">
+					<img class="img-polaroid" src="http://i.istockimg.com/file_thumbview_approve/20031910/2/stock-photo-20031910-lego-city-passenger-train-7938.jpg" alt="Remote-controlled Trains">
 				</div>
 				<!--
 				<div class="span5 offset1 video">
@@ -157,8 +157,9 @@
 				</div>-->
 				<!-- We define a new 'actions' div to contain statistics,order and share buttons. -->
 				<div class="span5 actions">
+					<div class="row-fluid">
 					<div class="span8 offset2">
-						<div class="statistics">
+						<div class="row-fluid statistics">
 							<div class="span4">
 								<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
 								<div class="linediv-l">
@@ -177,26 +178,30 @@
 							</div>
 						</div>
 					</div>
+					<div class="row-fluid">
 					<div class="span10 offset1">
 						<!-- Bootstrap progress bar -->
 						<!-- http://twitter.github.io/bootstrap/components.html#progress -->
 						<div class="thermometer progress active">
-							<div class="bar bar-success" style="width: 60%;">
-							</div>
-							<div class="bar bar-warning" style="width: 40%;">
-							</div>
+							<div class="bar bar-success" style="width: 60%;"> </div>
+							<div class="bar bar-warning" style="width: 40%;"> </div>
 						</div>
 					</div>
+					</div>
+					<div class="row-fluid">
 					<div class="span6 offset3 order">
 						<!-- Standard Bootstrap button. -->
 						<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
 						<button class="btn btn-success btn-large">Preorder</button>
 					</div>
+					</div>
+					<div class="row-fluid">
 					<div class="span8 offset2 social">
 						<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
 						<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-
 					</div>
+					</div>
+				</div>
 				</div>
 			</div>
 
@@ -219,13 +224,13 @@
 				<div class="span5 offset video">
 					 <!--<img  src="http://imgur.com/VgZTOYk.png alt="Smiley face" height="480" width="300"> 
 					 <img class="img-polaroid" src="http://imgur.com/AmuALzr.png" alt="Smiley face" height="1020" width="1320">-->
-					 <img class="img-polaroid" src="http://imgur.com/AmuALzr.png" height="510" width="660">
+					 <img class="img-polaroid" src="http://imgur.com/AmuALzr.png" alt="Smiley face" height="510" width="660">
 				</div>
 			</div>
 			<div class="row-fluid section2">
 			<!-- Experimenting this by commenting it above -->
 				<div class="span5 offset1 asset">
-					<img class="img-polaroid" src="http://imgur.com/uy8TrZS.png" height="400" width="510">
+					<img class="img-polaroid" src="http://imgur.com/uy8TrZS.png" alt="Sets and Blocks" height="400" width="510">
 				</div>
 				<div class="span5 offset copy copy-right">
 					<p>
@@ -234,7 +239,7 @@
 					</p>
 			<!-- Experimenting this by putting this below
 				<div class="span5 offset1 asset">
-					<img class="img-polaroid" src="http://imgur.com/uy8TrZS.png" height="1020" width="1320">
+					<img class="img-polaroid" src="http://imgur.com/uy8TrZS.png" alt="Blocks and Sets" height="1020" width="1320">
 				</div>
 				-->
 			<!-- Experimenting this by putting it above
@@ -247,7 +252,7 @@
 				</div>
 			<!-- Experimenting this by putting it above
 				<div class="span5 offset asset">
-					<img class="img-polaroid" src="http://placehold.it/480x300">
+					<img class="img-polaroid" alt="Blocks and Sets" src="http://placehold.it/480x300">
 				</div>
 				-->
 			<!-- Experimenting this by putting it above
@@ -260,7 +265,7 @@
 				-->
 				<!--
 				<div class="span5 asset">
-					<img class="img-polaroid" src="http://placehold.it/480x300">
+					<img class="img-polaroid" alt="High Caliber Toys" src="http://placehold.it/480x300">
 				</div>
 				-->
 			</div>
@@ -337,5 +342,3 @@
 	</body>
 </html>
 
-
-:q
